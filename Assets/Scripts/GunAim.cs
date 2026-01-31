@@ -40,7 +40,7 @@ public class GunAim : MonoBehaviour
         //{
         //    angle += 180f;
         //}
-
+        //lklallk
         angle = Mathf.Clamp(angle, -40f, 40f);
 
         transform.rotation = Quaternion.Euler(0, 0, angle);
