@@ -4,6 +4,7 @@ public class syringe : MonoBehaviour
 {
     [SerializeField] private float bulletSpeed = 20f;
     [SerializeField] private playerAttack playerAttackRef;
+    [SerializeField] private playerMovement playerMovementRef;
 
     public bool isFlying = false;
     private Vector2 fireDir;
@@ -34,7 +35,6 @@ public class syringe : MonoBehaviour
     {
         //Debug.Log($"{name} | isFlying:{isFlying} | isInjected:{isInjected}");
 
-
         if (isFlying)
         {
             transform.Translate(bulletSpeed * fireDir * Time.deltaTime, Space.World);    
@@ -51,21 +51,25 @@ public class syringe : MonoBehaviour
         else
         {
             ropeLine.enabled = false;
+            GetComponent<Collider2D>().enabled = false;
+
         }
-        
+
     }
 
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("syringe triggered with the obj: " + collision.gameObject.name);
         if (!isFlying) return;
 
-        isFlying = false;
-        isInjected = true;
         
         switch(collision.gameObject.tag)
         {
+            case "Player":
+            case "Gun":
+                return;
             case "Enemy":
                 injectDelay = 1.5f;
                 syringeAnim.SetTrigger("Inject");
@@ -80,8 +84,10 @@ public class syringe : MonoBehaviour
                 break;
         }
 
+        isFlying = false;
+        isInjected = true;
 
-        GetComponent<Collider2D>().enabled = false;
+        //GetComponent<Collider2D>().enabled = false;
         Invoke(nameof(InjectionCompleted), injectDelay);
     }
     
@@ -105,8 +111,11 @@ public class syringe : MonoBehaviour
         {
             transform.SetParent(returnTarget);
             transform.position = returnTarget.position + returnOffset;
-            transform.localScale = new Vector3(returnTarget.localScale.x, transform.localScale.y);
+            //transform.localScale = new Vector3(returnTarget.localScale.x, transform.localScale.y);
+            transform.localScale = Vector3.one;
             transform.localRotation = Quaternion.identity;
+
+
 
             isReturning = false;
             playerAttackRef.canShoot = true;
@@ -117,6 +126,8 @@ public class syringe : MonoBehaviour
                 syringeAnim.SetTrigger("Reload");
                 isMedComplete = false;
             }
+            GetComponent<Collider2D>().enabled = false;
+
         }
     }
 
@@ -133,8 +144,8 @@ public class syringe : MonoBehaviour
         
 
         transform.position = startPos;
-        fireDir = returnTarget.right;
-        
+        fireDir = returnTarget.right * playerMovementRef.facingDir;
+
 
         returnOffset = transform.position - returnTarget.position;
 

@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Srinu Projects\\Untitled-Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87156C06-4EDE-ACA0-D84C-6AD060651461}|Assembly-CSharp.csproj|C:\\Srinu Projects\\Untitled-Game\\assets\\scripts\\guncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87156C06-4EDE-ACA0-D84C-6AD060651461}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\guncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87156C06-4EDE-ACA0-D84C-6AD060651461}|Assembly-CSharp.csproj|c:\\srinu projects\\untitled-game\\assets\\scripts\\syringe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87156C06-4EDE-ACA0-D84C-6AD060651461}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\syringe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87156C06-4EDE-ACA0-D84C-6AD060651461}|Assembly-CSharp.csproj|c:\\srinu projects\\untitled-game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87156C06-4EDE-ACA0-D84C-6AD060651461}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87156C06-4EDE-ACA0-D84C-6AD060651461}|Assembly-CSharp.csproj|C:\\Srinu Projects\\Untitled-Game\\assets\\scripts\\gunaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87156C06-4EDE-ACA0-D84C-6AD060651461}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gunaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "playerMovement.cs",
+              "DocumentMoniker": "C:\\Srinu Projects\\Untitled-Game\\Assets\\Scripts\\playerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\playerMovement.cs",
+              "ToolTip": "C:\\Srinu Projects\\Untitled-Game\\Assets\\Scripts\\playerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\playerMovement.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T06:27:06.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GunAim.cs",
+              "DocumentMoniker": "C:\\Srinu Projects\\Untitled-Game\\Assets\\Scripts\\GunAim.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GunAim.cs",
+              "ToolTip": "C:\\Srinu Projects\\Untitled-Game\\Assets\\Scripts\\GunAim.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GunAim.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T08:35:40.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GunController.cs",
+              "DocumentMoniker": "C:\\Srinu Projects\\Untitled-Game\\Assets\\Scripts\\GunController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GunController.cs",
+              "ToolTip": "C:\\Srinu Projects\\Untitled-Game\\Assets\\Scripts\\GunController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GunController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAwwEsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T08:35:32.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "syringe.cs",
+              "DocumentMoniker": "C:\\Srinu Projects\\Untitled-Game\\Assets\\Scripts\\syringe.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\syringe.cs",
+              "ToolTip": "C:\\Srinu Projects\\Untitled-Game\\Assets\\Scripts\\syringe.cs",
+              "RelativeToolTip": "Assets\\Scripts\\syringe.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAIwJIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T08:35:20.119Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private float jumpHeight;
     public bool isOnGround;
     Rigidbody2D rb;
+    public float facingDir;
 
 
     //[SerializeField] private GameSceneManager gameSceneManagerScript;
@@ -25,7 +26,7 @@ public class playerMovement : MonoBehaviour
 
         Move();
         Jump();
-
+        
     }
 
     private void Move()
@@ -38,10 +39,12 @@ public class playerMovement : MonoBehaviour
         if (horizontalInput > 0.01f)
         {
             transform.localScale = Vector3.one;
+            facingDir = 1;
         }
         else if (horizontalInput < -0.01f)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+            facingDir = -1;
         }
 
         

@@ -5,16 +5,17 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
-    public bool isEquipped = false;
+    public bool isEquipped;
     [SerializeField] private Transform gunHolder;
     [SerializeField] private Collider2D gunCollider;
     bool isPlayerNear = false;
     [SerializeField] private Animator gunAnim;
     [SerializeField] private playerMovement playerMovementRef;
-    Vector3 OgGunScale;
+    //Vector3 OgGunScale;
     private void Start()
     {
         gunAnim = GetComponent<Animator>();
+        isEquipped = false;
     }
 
     private void Update()
@@ -24,13 +25,14 @@ public class GunController : MonoBehaviour
         if (isEquipped)
         {
             transform.localRotation = Quaternion.identity;
+            gunCollider.enabled = false;
         }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
             if (isEquipped && playerMovementRef.isOnGround)
             {
-                OgGunScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                //OgGunScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
                 DropTheGun();
             }
             else if(!isEquipped && isPlayerNear)
@@ -76,7 +78,9 @@ public class GunController : MonoBehaviour
         isPlayerNear = false;
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
-        transform.localScale = OgGunScale;
+        //transform.localScale = OgGunScale;
+        //transform.localScale = Vector3.one;
+
     }
 
 }
